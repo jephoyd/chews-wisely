@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+  --font-outfit: Outfit;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --color-gray-100: #111827;
+  --color-black: #000;
+  --color-aliceblue: #ebf1ff;
+  --color-white: #fff;
+
+  /* Border radiuses */
+  --br-21xl: 40px;
+  --br-3xs: 10px;
+}
+
+
+.chews-wisely {
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.logo,
+.logo-wrapper {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+}
+.logo {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+}
+.logo-wrapper {
+  top: 42px;
+  left: 82.5px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--font-outfit);
+}
+.create-room,
+.create-room1 {
+  position: absolute;
+  top: 16px;
+  left: 22px;
+}
+.create-room {
+  top: 433px;
+  left: 772px;
+  border-radius: var(--br-21xl);
+  background-color: var(--color-black);
+  width: 182px;
+  height: 56px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.create-room2,
+.create-room3 {
+  position: absolute;
+  top: 16px;
+  left: 55px;
+}
+.create-room2 {
+  top: 433px;
+  left: 500px;
+  border-radius: var(--br-21xl);
+  background-color: rgba(0, 0, 0, 0.39);
+  width: 182px;
+  height: 56px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: right;
+}
+.input-your-username {
+  position: absolute;
+  top: 169px;
+  left: calc(48% - 189px);
+  font-size: 32px;
+  font-family: var(--font-outfit);
+  color: var(--color-black);
+  display: inline-block;
+  width: 382px;
+  height: 53px;
+}
+.desktop-create-room-child {
+  position: absolute;
+  top: 215px;
+  left: 427px;
+  border-radius: 42px;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 585px;
+  height: 137px;
+}
+.desktop-create-room-item {
+  position: absolute;
+  top: 249px;
+  left: 490px;
+  width: 460px;
+  height: 71px;
+  object-fit: cover;
+}
+.enter-your-username {
+  position: absolute;
+  top: 270px;
+  left: 586px;
+  font-size: 24px;
+  color: #cdbebe;
+}
+.desktop-create-room {
+  position: relative;
+  background-color: #fafafa;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-aliceblue);
+  font-family: var(--font-montserrat);
+}
+
+popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+/*.frame-div {
+  position: absolute;
+  top: 233px;
+  left: 379px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-gainsboro);
+  width: 681px;
+  height: 367px;
+  mix-blend-mode: darken;
+  color: #683333;
+}
+*/

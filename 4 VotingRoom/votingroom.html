@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voting Room</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./votingroom.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-voting-room">
+      <div class="voting-room">VOTING ROOM</div>
+      <div class="header">
+        <div class="logo">
+          <div class="chews-wisely">chews wiselY</div>
+        </div>
+      </div>
+      <div class="instruction">
+        <div class="instruction-voting-room">
+          <div class="instructions">
+            <p class="instructions1">Instructions:</p>
+          </div>
+          <div class="familiarize-yourself-with-container">
+            <ul class="familiarize-yourself-with-the">
+              <li class="familiarize-yourself-with">
+                Familiarize yourself with the list of available options.
+              </li>
+              <li class="familiarize-yourself-with">
+                Click on the drop down arrow to expand the numbers in which you
+                are going to base the rank of the restaurant.
+              </li>
+              <li class="familiarize-yourself-with">
+                Ranking from 1-10 with 1 being the most preferred and 10 being
+                the least.
+              </li>
+              <li>
+                Once you are satisfied with your rankings, click the "Submit"
+                button.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="votebox">
+        <img
+          class="outerboxgray-icon"
+          alt=""
+          src="./public/outerboxgray@2x.png"
+        />
+
+        <img
+          class="outerboxblack-icon"
+          alt=""
+          src="./public/outerboxblack@2x.png"
+        />
+
+        <div class="votebox-child"></div>
+        <img class="votebox-item" alt="" src="./public/rectangle-2@2x.png" />
+
+        <img class="votebox-inner" alt="" src="./public/rectangle-3@2x.png" />
+
+        <img class="rectangle-icon" alt="" src="./public/rectangle-4@2x.png" />
+
+        <img class="votebox-child1" alt="" src="./public/rectangle-5@2x.png" />
+
+        <img class="votebox-child2" alt="" src="./public/rectangle-6@2x.png" />
+
+        <img class="votebox-child3" alt="" src="./public/rectangle-6@2x.png" />
+
+        <img class="votebox-child4" alt="" src="./public/rectangle-8@2x.png" />
+
+        <img class="votebox-child5" alt="" src="./public/rectangle-9@2x.png" />
+
+        <img class="votebox-child6" alt="" src="./public/rectangle-10@2x.png" />
+      </div>
+      <div class="display-resto-name10">Display Resto Name</div>
+      <div class="display-resto-name9">Display Resto Name</div>
+      <div class="display-resto-name8">Display Resto Name</div>
+      <div class="display-resto-name7">Display Resto Name</div>
+      <div class="display-resto-name6">Display Resto Name</div>
+      <div class="display-resto-name5">Display Resto Name</div>
+      <div class="display-resto-name4">Display Resto Name</div>
+      <div class="display-resto-name3">Display Resto Name</div>
+      <div class="display-resto-name2">Display Resto Name</div>
+      <div class="display-resto-name1">Display Resto Name</div>
+      <div class="submitbutton" id="submitbuttonContainer">
+        <b class="submit">SUBMIT</b>
+      </div>
+      <div class="drop-down-ranking10">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking9">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking8">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking7">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking6">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking5">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking4">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking3">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking2">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+      <div class="drop-down-ranking1">
+        <div class="v-wrapper">
+          <div class="v">v</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var submitbuttonContainer = document.getElementById("submitbuttonContainer");
+      if (submitbuttonContainer) {
+        submitbuttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./loadingvr.html";
+        });
+      }
+      </script>
+  </body>
+</html>

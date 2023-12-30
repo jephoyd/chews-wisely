@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Room</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./createroom1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-create-room">
+      <div class="copy-room-link-parent">
+        <div class="copy-room-link">Copy Room Link</div>
+        <div class="copy-room-id">Copy Room ID</div>
+        <img class="image-8-icon" alt="" src="./public/image-8@2x.png" />
+
+        <img class="image-9-icon" alt="" src="./public/image-9@2x.png" />
+      </div>
+      <div class="display-hosts-username">Display Host’s Username</div>
+      <div class="have-your-friends-join-your-ro-wrapper">
+        <div class="have-your-friends">
+          Have your friends join your room with the room ID or link!
+        </div>
+      </div>
+      <div class="desktop-create-room-child"></div>
+      <div class="room-id">Room ID:</div>
+      <div class="display-room-id">Display Room ID</div>
+      <div class="logo-wrapper" id="groupContainer">
+        <div class="logo">
+          <div class="chews-wisely">chews wiselY</div>
+        </div>
+      </div>
+      <div class="proceed" id="proceedContainer">
+        <b class="proceed1">Proceed</b>
+      </div>
+      <div class="cancel" id="cancelContainer">
+        <b class="cancel1">Cancel</b>
+      </div>
+      <div class="desktop-create-room-item"></div>
+      <b class="room-created-successfully">Room created successfully.</b>
+    </div>
+
+    <script>
+      
+      var proceedContainer = document.getElementById("proceedContainer");
+      if (proceedContainer) {
+        proceedContainer.addEventListener("click", function (e) {
+          window.location.href = "/3 Lobby(Host)/lobby1.html";
+        });
+      }
+      
+      var cancelContainer = document.getElementById("cancelContainer");
+      if (cancelContainer) {
+        cancelContainer.addEventListener("click", function (e) {
+          window.location.href = "/1 LandingPage/index.html";
+        });
+      }
+      </script>
+  </body>
+</html>

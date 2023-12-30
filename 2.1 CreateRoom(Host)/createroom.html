@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Room</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./createroom.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-create-room">
+      <div class="logo-wrapper" id="groupContainer">
+        <div class="logo">
+          <div class="chews-wisely">chews wiselY</div>
+        </div>
+      </div>
+      <div class="create-room" id="createRoom">
+        <b class="create-room1">Create Room</b>
+      </div>
+      <div class="create-room2" id="createRoom1">
+        <b class="create-room3">Cancel</b>
+      </div>
+      <div class="input-your-username">Input your username here</div>
+      <div class="desktop-create-room-child"></div>
+      <img
+        class="desktop-create-room-item"
+        alt=""
+        src="./public/rectangle-5@2x.png"
+      />
+
+      <b class="enter-your-username"contenteditable="true" id="editableContent">Enter your username</div>
+
+    <script>
+      
+      var createRoom = document.getElementById("createRoom");
+      if (createRoom) {
+        createRoom.addEventListener("click", function (e) {
+          window.location.href = "./createroom1.html";
+        });
+      }
+      
+      var createRoom1 = document.getElementById("createRoom1");/*CANCEL*/
+      if (createRoom1) {
+        createRoom1.addEventListener("click", function (e) {
+          window.location.href = "/1 LandingPage/index.html";
+        });
+      }
+
+      const editableDiv = document.getElementById('editableContent');
+      editableDiv.addEventListener('focus', function () {
+          editableDiv.innerText = "";
+        }
+      );
+
+      editableDiv.addEventListener('blur', function () {
+        if (editableDiv.innerText === '') {
+          editableDiv.innerText = 'Enter your username';
+        }
+      });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to Play</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./howtoplay.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-how-to-play">
+      <div class="instruction-voting-room">
+        <div class="as-a-host">As a Host:</div>
+        <div class="check-the-waiting-container">
+          <p class="check-the-waiting">
+            1. Check the waiting room to see who wants to join the vote.
+          </p>
+          <p class="check-the-waiting">
+            2. Approve or reject users by clicking on their username. Avoid
+            duplicates in the same room.
+          </p>
+          <p class="check-the-waiting">
+            3. Use the check icon to accept and the remove (x) icon to decline.
+          </p>
+          <p class="check-the-waiting">
+            4. View the submitted options for the current vote.
+          </p>
+          <p class="check-the-waiting">
+            5. Delete or remove choices if necessary.
+          </p>
+          <p class="always-keep-at">
+            6. Always keep at least one option for a smooth voting session.
+          </p>
+        </div>
+      </div>
+      <div class="instructions">INSTRUCTIONS</div>
+      <div class="create-room-item" id="createRoomItem">
+        <b class="create-room">HOME</b>
+      </div>
+      <div class="header-wrapper">
+        <div class="header">
+          <div class="header1" id="headerContainer">
+            <div class="logo">
+              <div class="chews-wisely">chews wiselY</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="instruction-voting-room1">
+        <div class="as-a-player">As a Player:</div>
+        <div class="check-the-options-container">
+          <p class="check-the-waiting">1. Check the options available.</p>
+          <p class="check-the-waiting">
+            2. Hover over your preferred option and click to select it as your
+            top choice (Rank 1).
+          </p>
+          <p class="check-the-waiting">
+            3. The order you select determines the ranking, with subsequent
+            choices being ranked accordingly.
+          </p>
+          <p class="check-the-waiting">
+            4. To change your vote, click on a different option to update your
+            preferences.
+          </p>
+          <p class="always-keep-at">
+            5. Click "Submit" when you're happy with your rankings.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var createRoomItem = document.getElementById("createRoomItem");
+      if (createRoomItem) {
+        createRoomItem.addEventListener("click", function (e) {
+            window.location.href = "./index.html";
+        });
+      }
+      
+      </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voting Room</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./loadingvr.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-loading">
+      <div class="header">
+        <div class="logo">
+          <div class="chews-wisely">chews wiselY</div>
+        </div>
+      </div>
+      <div class="loading-please-wait">LOADING... Please Wait</div>
+      <img class="sand-clock-1-icon" alt="" src="./public/sandclock-1@2x.png" />
+
+      <div class="host" id="hostContainer">
+        <b class="host1">host</b>
+      </div>
+      <div class="guest" id="guestContainer">
+        <b class="host1">guest</b>
+      </div>
+      <div class="tie" id="tieContainer">
+        <b class="host1">tie</b>
+      </div>
+    </div>
+
+    <script>
+      var hostContainer = document.getElementById("hostContainer");
+      if (hostContainer) {
+        hostContainer.addEventListener("click", function (e) {
+          window.location.href = "/5 Leaderboard/leaderboardhost.html";
+        });
+      }
+      
+      var guestContainer = document.getElementById("guestContainer");
+      if (guestContainer) {
+        guestContainer.addEventListener("click", function (e) {
+          window.location.href = "/5 Leaderboard/leaderboardguest.html";
+        });
+      }
+      
+      var tieContainer = document.getElementById("tieContainer");
+      if (tieContainer) {
+        tieContainer.addEventListener("click", function (e) {
+          window.location.href = "/5 Leaderboard/leaderboardtie.html";
+        });
+      }
+      </script>
+  </body>
+</html>

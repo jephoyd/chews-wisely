@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lobby (Host)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./lobby1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-lobby-host-view">
+      <div class="room-id-container">
+        <p class="room-id-">Room ID: _____________</p>
+        <p class="room-id-">&nbsp;</p>
+      </div>
+      <div class="restaurants">Restaurants:</div>
+      <div class="waiting-area">Waiting Area:</div>
+      <div class="attendees">Attendees:</div>
+      <div class="start-wrapper" id="frameContainer">
+        <div class="start">START</div>
+      </div>
+      <div class="cancel-wrapper" id="frameContainer1">
+        <div class="start">cancel</div>
+      </div>
+      <div class="desktop-lobby-host-view-child"></div>
+      <img
+        class="desktop-lobby-host-view-item"
+        alt=""
+        src="./public/line-11@2x.png"
+      />
+
+      <img
+        class="desktop-lobby-host-view-inner"
+        alt=""
+        src="./public/group-15@2x.png"
+      />
+
+      <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <div class="instructions">Instructions:</div>
+        <div class="need-at-least-container">
+          <ul class="need-at-least-2-or-more-option">
+            <li class="need-at-least">
+              Need at least 2 or more options (maximum of 10)
+            </li>
+            <li>No same username or options</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header1">
+          <div class="logo">
+            <div class="chews-wisely">chews wiselY</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="display-room-id">Display Room ID</div>
+    </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./lobby2.html";
+        });
+      }
+      
+      var frameContainer1 = document.getElementById("frameContainer1");
+      if (frameContainer1) {
+        frameContainer1.addEventListener("click", function (e) {
+          window.location.href = "/1 LandingPage/index.html";
+        });
+      }
+      </script>
+  </body>
+</html>
