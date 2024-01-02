@@ -28,18 +28,11 @@
       <div class="create-room2" id="createRoom1">
         <b class="create-room3">Cancel</b>
       </div>
-      <div class="input-your-username">Input your username here</div>
-      <div class="desktop-create-room-child"></div>
-      <img
-        class="desktop-create-room-item"
-        alt=""
-        src="./public/rectangle-5@2x.png"
-      />
-
-      <b class="enter-your-username"contenteditable="true" id="editableContent">Enter your username</div>
-
-    <script>
+      <div class="group-child">
+        <input type="text" id="username" name="username" oninput="handleInput(this)" placeholder="Enter username">
+      </div>
       
+     <script>
       var createRoom = document.getElementById("createRoom");
       if (createRoom) {
         createRoom.addEventListener("click", function (e) {
@@ -47,7 +40,7 @@
         });
       }
       
-      var createRoom1 = document.getElementById("createRoom1");/*CANCEL*/
+      var createRoom1 = document.getElementById("createRoom1");
       if (createRoom1) {
         createRoom1.addEventListener("click", function (e) {
           window.location.href = "/1 LandingPage/index.html";
@@ -65,6 +58,7 @@
           editableDiv.innerText = 'Enter your username';
         }
       });
+      
       </script>
   </body>
 </html>
